@@ -1,6 +1,6 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
-Given("I am on the Sauce Demo login page", () => {
+Given("I am on the login page", () => {
   cy.visit("http://zero.webappsecurity.com/login.html"); // Visit Sauce Demo login page
 });
 
@@ -16,7 +16,7 @@ When("I enter valid credentials", () => {
     .click(); // Click the login button
 });
 
-Then("I should see the Sauce Demo products page", () => {
+Then("I should see the home page", () => {
 
   cy.get("#account_summary_tab").should("be.visible"); // Validate that the products are visible
 }); 
