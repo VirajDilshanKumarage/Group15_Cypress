@@ -22,6 +22,10 @@ module.exports = defineConfig({
 
       return config;
     },
-    specPattern: "cypress/e2e/step_definitions/**/*.feature", // Use Gherkin feature files
+    specPattern: "cypress/e2e/features/**/*.feature", 
+
+
   },
 });
+
+
