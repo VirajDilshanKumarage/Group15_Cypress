@@ -7,12 +7,17 @@ Given("I am on the login page", () => {
   LoginPage.visit();
 });
 
-When("I enter valid credentials", () => {
-  LoginPage.enterUserName('username');
-  LoginPage.enterPassword('password');
-  LoginPage.submit();
+When("I enter username with {string}", username => {
+  LoginPage.enterUserName(username);
+})
 
-});
+When("I enter password with {string}", password => {
+  LoginPage.enterPassword(password);
+})
+
+When("I click on submit button", () => {
+  LoginPage.submit();
+})
 
 Then("I should see the home page", () => {
   LoginPage.seeHomePage();
