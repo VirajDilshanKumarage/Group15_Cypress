@@ -3,7 +3,7 @@ const USERNAME = '#user_login'
 const PASSWORD = '#user_password'
 const SUBMIT_BUTTON = 'input[name="submit"]'
 const TAB = '#account_summary_tab'
-
+const ERROR_MESSAGE = '.alert-error'
 
 class LoginPage {
 
@@ -25,6 +25,10 @@ class LoginPage {
 
     static seeHomePage(){
         cy.get(TAB).should("be.visible"); 
+    }
+     
+    static getErrorMessage(error) {
+        cy.get(ERROR_MESSAGE).contains(error);
     }
 
 }

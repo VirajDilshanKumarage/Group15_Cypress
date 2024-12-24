@@ -22,4 +22,10 @@ When("I click on submit button", () => {
 Then("I should see the home page", () => {
   LoginPage.seeHomePage();
 }); 
+
+Then("I should see error message with {string}", error => {
+  LoginPage.getErrorMessage(error);
+}); 
+
+
     
