@@ -1,9 +1,9 @@
-const URL = 'http://zero.webappsecurity.com/login.html'
-const USERNAME = '#user_login'
-const PASSWORD = '#user_password'
-const SUBMIT_BUTTON = 'input[name="submit"]'
-const TAB = '#account_summary_tab'
-const ERROR_MESSAGE = '.alert-error'
+const URL = 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
+const USERNAME = 'input[name="username"]'; 
+const PASSWORD = 'input[name="password"]';
+const SUBMIT_BUTTON = 'button.orangehrm-login-button';
+const DASHBOARD_BREADCRUMB = '.oxd-topbar-header-breadcrumb-module';
+const ERROR_MESSAGE = '.oxd-alert-content-text'
 
 class LoginPage {
 
@@ -24,7 +24,7 @@ class LoginPage {
     }
 
     static seeHomePage(){
-        cy.get(TAB).should("be.visible"); 
+        cy.get(DASHBOARD_BREADCRUMB).should("be.visible"); 
     }
      
     static getErrorMessage(error) {

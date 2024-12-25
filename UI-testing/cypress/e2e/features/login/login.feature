@@ -7,14 +7,17 @@ Feature: Login functionality
 
   Scenario: Invalid login
     Given I am on the login page
-    When I enter username with "username gh"
-    And I enter password with "password j"
+    When I enter username with "username hh"
+    And I enter password with "password kjklj"
     And I click on submit button
-    Then I should see error message with "Login and/or password are wrong."
+    Then I should see error message with "Invalid credentials"
 
   Scenario: Valid login
     Given I am on the login page
-    When I enter username with "username"
-    And I enter password with "password"
+    When I enter username with "Admin"
+    And I enter password with "admin123"
     And I click on submit button
     Then I should see the home page
+
+
+

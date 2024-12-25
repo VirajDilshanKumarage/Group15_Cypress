@@ -4,7 +4,7 @@ import LoginPage from "./loginPage";
 
 
 Given("I am on the login page", () => {
-  LoginPage.visit();
+  LoginPage.visit(); 
 });
 
 When("I enter username with {string}", username => {
