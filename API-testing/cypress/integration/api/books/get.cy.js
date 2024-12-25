@@ -7,7 +7,7 @@ describe('API Testing: GET APIs', () => {
             method: 'GET',
             url: baseUrl,
             auth: {
-                username: 'user', // Username for authentication
+                username: 'admin', // Username for authentication
                 password: 'password' // Password for authentication
             }
         }).then((response) => {
@@ -23,7 +23,7 @@ describe('API Testing: GET APIs', () => {
             method: 'GET',
             url: `${baseUrl}/${bookId}`,
             auth: {
-                username: 'user', // Username for authentication
+                username: 'admin', // Username for authentication
                 password: 'password' // Password for authentication
             }
         }).then((response) => {
@@ -41,7 +41,7 @@ describe('API Testing: GET APIs', () => {
             method: 'GET',
             url: `${baseUrl}/${invalidBookId}`,
             auth: {
-                username: 'user', // Username for authentication
+                username: 'admin', // Username for authentication
                 password: 'password' // Password for authentication
             },
             failOnStatusCode: false // Prevent Cypress from failing the test on non-2xx responses
