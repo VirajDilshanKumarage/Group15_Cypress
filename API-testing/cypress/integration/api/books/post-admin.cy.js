@@ -44,7 +44,7 @@ describe('API Tests for /api/books', () => {
         password: credentials.password,
       },
       body: {
-        author: "Missing Title",          // Missing title
+        author: "J.K. Rowling",          // Missing title
       },
       failOnStatusCode: false, // Prevent Cypress from failing on 4xx or 5xx errors
     }).then((response) => {
