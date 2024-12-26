@@ -2,7 +2,7 @@ describe("API Tests for /api/books", () => {
   const apiUrl = "http://localhost:7081/api/books";
 
 
-  // /*------------- Create a book -------------*/
+  /*------------- Create a book -------------*/
 
   it("should successfully create a book (201)", () => {
     cy.request({
@@ -89,7 +89,6 @@ describe("API Tests for /api/books", () => {
   // /*------------- Book Already Exists -------------*/
 
   it("should return 208 Already Reported when adding a book with the same title", () => {
-    // Attempt to add the same book
     cy.request({
       method: "POST",
       url: apiUrl,
@@ -99,7 +98,7 @@ describe("API Tests for /api/books", () => {
       },
       body: {
         // id: 1,
-        title: "Hathpana",
+        title: "Hathpana",                // add the same book
         author: "Martin wickramasingha",
       },
       failOnStatusCode: false, // Prevent automatic test failure on non-2xx status
@@ -134,7 +133,6 @@ describe("API Tests for /api/books", () => {
   // /*------------- Adding Book With Existing ID -------------*/
 
   it("should return 400 for adding book with existing ID", () => {
-    // Attempt to add the book with existing ID
     cy.request({
       method: "POST",
       url: apiUrl,
