@@ -1,19 +1,14 @@
 describe('API Testing: GET APIs', () => {
     const baseUrl = 'http://localhost:7081/api/books';
-    const adminUsername = 'admin';
-    const adminPassword = 'password';
-    const userUsername = 'user';
-    const userPassword = 'password';
+    const adminCredentials = { username: 'admin', password: 'password' };
+    const userCredentials = { username: 'user', password: 'password' };
     
    //Tset get all books - admin role
     it('Should fetch all books successfully', () => {
         cy.request({
             method: 'GET',
             url: baseUrl,
-            auth: {
-                username: adminUsername, 
-                password: adminPassword 
-            }
+            auth: adminCredentials,
         }).then((response) => {
             expect(response.status).to.eq(200); 
             expect(response.body).to.be.an('array'); 
@@ -27,10 +22,7 @@ describe('API Testing: GET APIs', () => {
         cy.request({
             method: 'GET',
             url: `${baseUrl}/${bookId}`,
-            auth: {
-                username: adminUsername, 
-                password: adminPassword 
-            }
+            auth: adminCredentials,
         }).then((response) => {
             expect(response.status).to.eq(200); 
             expect(response.body).to.have.property('id', bookId); 
@@ -45,10 +37,7 @@ describe('API Testing: GET APIs', () => {
         cy.request({
             method: 'GET',
             url: `${baseUrl}/${invalidBookId}`,
-            auth: {
-                username: adminUsername, 
-                password: adminPassword 
-            },
+            auth: adminCredentials,
             failOnStatusCode: false // Prevent Cypress from failing the test on non-2xx responses
         }).then((response) => {
             expect(response.status).to.eq(404); 
@@ -65,10 +54,7 @@ describe('API Testing: GET APIs', () => {
         cy.request({
             method: 'GET',
             url: baseUrl,
-            auth: {
-                username: userUsername, 
-                password: userPassword
-            }
+            auth: userCredentials,
         }).then((response) => {
             expect(response.status).to.eq(200); 
             expect(response.body).to.be.an('array'); 
@@ -81,10 +67,7 @@ describe('API Testing: GET APIs', () => {
         cy.request({
             method: 'GET',
             url: `${baseUrl}/${bookId}`,
-            auth: {
-                username: userUsername, 
-                password: userPassword 
-            }
+            auth: userCredentials,
         }).then((response) => {
             expect(response.status).to.eq(200); 
             expect(response.body).to.have.property('id', bookId); 
@@ -99,10 +82,7 @@ describe('API Testing: GET APIs', () => {
         cy.request({
             method: 'GET',
             url: `${baseUrl}/${invalidBookId}`,
-            auth: {
-                username: userUsername,
-                password: userPassword
-            },
+            auth: userCredentials,
             failOnStatusCode: false 
         }).then((response) => {
             expect(response.status).to.eq(404); 
