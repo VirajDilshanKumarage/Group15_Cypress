@@ -1,11 +1,12 @@
 describe('API Testing: PUT APIs', () => {
   const baseUrl = 'http://localhost:7081/api/books';
   
+  // Test case 01- Update an existing book
   it('Should update a book or handle various response scenarios', () => {
-    const bookId = 4;
+    const bookId = 7;
     const updatedBook = {
         id: bookId,
-        title: 'Updated Book 6',
+        title: 'Updated Book 7',
         author: 'Updated Author Name',
     };
 
@@ -19,7 +20,7 @@ describe('API Testing: PUT APIs', () => {
         body: updatedBook,
         failOnStatusCode: false, // Prevent test failure for non-2xx responses
     }).then((putResponse) => {
-        if (putResponse.status === 400 && putResponse.body === 'Invalid book ID') {
+        if (putResponse.status === 400 && putResponse.body === 'Book not found') {
             cy.log('The book could not be updated because the provided ID is invalid.');
             expect(putResponse.body).to.eq('Invalid book ID');
         }
@@ -51,4 +52,5 @@ describe('API Testing: PUT APIs', () => {
         }
     });
   });
-})
+
+});
