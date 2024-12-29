@@ -53,4 +53,28 @@ describe('API Testing: PUT APIs', () => {
     });
   });
 
+  // Test case 02- Update a non-existing book
+  it('Should handle non-existent book ID (404)', () => {
+    const nonExistentId = 12323;
+    const updatedBook = {
+        id: nonExistentId,
+        title: 'Nothing Book',
+        author: 'Mr. Author',
+    };
+
+    cy.request({
+        method: 'PUT',
+        url: `${baseUrl}/${nonExistentId}`,
+        auth: {
+            username: 'admin',
+            password: 'password',
+        },
+        body: updatedBook,
+        failOnStatusCode: false,
+    }).then((putResponse) => {
+        expect(putResponse.status).to.eq(404);
+        expect(putResponse.body).to.eq('Book not found');
+    });
+  });
+
 });
