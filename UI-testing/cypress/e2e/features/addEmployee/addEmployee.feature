@@ -9,6 +9,6 @@ Feature: Add employee
     And I enter First name with "Kavindya"
     And I enter Middle name with "Pamodini"
     And I enter Last name with "Dharmasena"
-    And I enter Employee ID with "0058"
+    And I enter Employee ID with "0065"
     And I click on Save button
-    Then I see Toste massage with "Successfully Saved"
+    Then I see Toast massage with "Successfully Saved"
