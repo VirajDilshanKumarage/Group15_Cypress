@@ -12,7 +12,7 @@ class LoginPage {
     }
 
     static enterUserName(userName){
-        cy.get(USERNAME).type(userName);
+        cy.get(USERNAME, { timeout: 10000 }).type(userName);
     }
 
     static enterPassword(password){
