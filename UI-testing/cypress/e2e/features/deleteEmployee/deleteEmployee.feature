@@ -5,5 +5,6 @@ Feature: Delete employee
  
   Scenario: Delete employee
     When I Click on PIM item in Dashboard
-    Then I see Toste massage with "Successfully Deleted"
-   
+    And I click on Delete button on a row
+    And I click on Delete confirmation button
+    Then I see Toast massage with "Successfully Deleted"

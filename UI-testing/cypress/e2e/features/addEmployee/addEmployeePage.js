@@ -48,9 +48,6 @@ class AddEmployee {
         .should('be.visible')
         .and('contain', message);
     }
-
-    
-
 }
 
 export default AddEmployee
