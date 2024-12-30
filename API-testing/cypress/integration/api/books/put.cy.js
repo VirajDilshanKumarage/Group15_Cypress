@@ -3,7 +3,7 @@ describe('API Testing: PUT APIs', () => {
   
   // Test case 01- Update an existing book
   it('Should update a book or handle various response scenarios', () => {
-    const bookId = 7;
+    const bookId = 2;
     const updatedBook = {
         id: bookId,
         title: 'Updated Book 7',
@@ -100,6 +100,27 @@ describe('API Testing: PUT APIs', () => {
         expect(putResponse.body).to.eq(undefined);
     });
   });
-   
-  
+
+  // Test case 04 - Missing required fields
+  it('Missing required fields', () => {
+    const bookId = 4;
+    const invalidBook = {
+        id: bookId,
+        // Missing title and author
+    };
+
+    cy.request({
+        method: 'PUT',
+        url: `${baseUrl}/${bookId}`,
+        auth: {
+            username: 'admin',
+            password: 'password',
+        },
+        body: invalidBook,
+        failOnStatusCode: false,
+    }).then((putResponse) => {
+        expect(putResponse.status).to.eq(400);
+    });
+  });
+
 });
