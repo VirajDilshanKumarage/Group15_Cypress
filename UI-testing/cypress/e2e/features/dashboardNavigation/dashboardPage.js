@@ -8,7 +8,7 @@ class DashboardPage {
       this.tabs = [
         { id: "Admin", title: "Admin" },
         { id: "PIM", title: "PIM" },
-        { id: "Leave", title: "Leave" },
+        // { id: "Leave", title: "Leave" },
         { id: "Time", title: "Time" },
         { id: "Recruitment", title: "Recruitment" },
         { id: "My Info", title: "My Info" },
@@ -16,7 +16,7 @@ class DashboardPage {
         { id: "Dashboard", title: "Dashboard" },
         { id: "Directory", title: "Directory" },
         { id: "Maintenance", title: "Maintenance" },
-        { id: "Claim", title: "Claim" },
+        // { id: "Claim", title: "Claim" },
         { id: "Buzz", title: "Buzz" },
       ];
     }
