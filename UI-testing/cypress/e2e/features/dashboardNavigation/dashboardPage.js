@@ -8,7 +8,7 @@ class DashboardPage {
       this.tabs = [
         { id: "Admin", title: "Admin" },
         { id: "PIM", title: "PIM" },
-        // { id: "Leave", title: "Leave" },
+        // { id: "Leave", title: "Leave" },   // missing in testing site
         { id: "Time", title: "Time" },
         { id: "Recruitment", title: "Recruitment" },
         { id: "My Info", title: "My Info" },
