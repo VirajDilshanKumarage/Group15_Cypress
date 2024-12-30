@@ -77,4 +77,29 @@ describe('API Testing: PUT APIs', () => {
     });
   });
 
+    // Test case 03 - invalid Id
+  it('Invalid book ID (400)', () => {
+    const invalidId = 'abc';
+    const updatedBook = {
+        id: invalidId,
+        title: 'Nothing Book',
+        author: 'Mr. Author',
+    };
+
+    cy.request({
+        method: 'PUT',
+        url: `${baseUrl}/${invalidId}`,
+        auth: {
+            username: 'admin',
+            password: 'password',
+        },
+        body: updatedBook,
+        failOnStatusCode: false,
+    }).then((putResponse) => {
+        expect(putResponse.status).to.eq(400);
+        expect(putResponse.body).to.eq(undefined);
+    });
+  });
+   
+  
 });
