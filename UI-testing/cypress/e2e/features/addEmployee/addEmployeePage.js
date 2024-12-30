@@ -38,7 +38,6 @@ class AddEmployee {
     }
 
     static clickSave(){
-        // const filePath = './cypress/e2e/features/addEmployee/photo.png';
         cy.get('input.oxd-file-input').selectFile(filePath, { force: true });
         cy.xpath(XPATH_SAVE_ITEM).click();
     }
