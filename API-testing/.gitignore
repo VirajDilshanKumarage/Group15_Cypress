@@ -60,3 +60,6 @@ lerna-debug.log
 # Next.js build and cache folders
 .next/
 out/
+
+# Ignore Cypress screenshots
+cypress/screenshots/
