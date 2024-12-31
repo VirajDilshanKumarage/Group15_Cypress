@@ -1,4 +1,5 @@
 import LoginPage from "./login/loginPage";
+require('cypress-xpath');
 
 const username = 'Admin';
 const password = 'admin123';
