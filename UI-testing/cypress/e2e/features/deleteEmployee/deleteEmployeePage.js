@@ -4,6 +4,8 @@ const TABLE_ROW_CONTAIN ='div[data-v-6c07a142]';
 const TABEL_ROW_PARENT = '.oxd-table-row';
 const XPATH_DELETE_BUTTON_IN_CONFIRMATION = '//*[@id="app"]/div[3]/div/div/div/div[3]/button[2]';
 const TOAST = '[class*="toast"]';
+const ID_TO_DELETE = '0301';
+const DELETE_BUTTON = 'button:nth-child(2)';
 
 class DeleteEmployee {
 
@@ -13,10 +15,10 @@ class DeleteEmployee {
 
     static clickDeleteButton(){
         cy.get(TABLE_ROW)
-        .contains(TABLE_ROW_CONTAIN, '0459')
+        .contains(TABLE_ROW_CONTAIN, ID_TO_DELETE)
         .parents(TABEL_ROW_PARENT)
         .within(() => {
-            cy.get('button:nth-child(2)').should('be.visible').click({ force: true });
+            cy.get(DELETE_BUTTON).should('be.visible').click({ force: true });
         });
     }
 

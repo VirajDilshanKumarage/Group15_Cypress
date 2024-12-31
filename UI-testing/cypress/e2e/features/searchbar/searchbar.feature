@@ -1,4 +1,4 @@
-Feature: Navigate to Maintenance Purge Record
+Feature: Check Search bar
 
 Scenario: Correct element check
     Given I am a valid user
