@@ -5,6 +5,7 @@ const XPATH_MIDDLE_NAME = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[
 const XPATH_LAST_NAME = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/input';
 const XPATH_EMP_ID = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[2]/div/div/div[2]/input';
 const XPATH_SAVE_ITEM = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]';
+const ADD_IMAGE_BUTTON = 'input.oxd-file-input';
 const filePath = './cypress/e2e/features/addEmployee/photo.png';
 const TOAST = '[class*="toast"]';
 
@@ -37,8 +38,11 @@ class AddEmployee {
         }
     }
 
+    static clickAddImage(){
+        cy.get(ADD_IMAGE_BUTTON).selectFile(filePath, { force: true });
+    }
+
     static clickSave(){
-        cy.get('input.oxd-file-input').selectFile(filePath, { force: true });
         cy.xpath(XPATH_SAVE_ITEM).click();
     }
 
