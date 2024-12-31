@@ -3,7 +3,6 @@ const USERNAME_FIELD = 'input[name="username"]';
 const PASSWORD_FIELD = 'input[name="password"]';
 const SUBMIT_BUTTON = 'button[type="submit"]';
 const ERROR_MESSAGE = '.oxd-alert--error';
-const REQUIRED_MESSAGE = '.oxd-input-group';
 const BREADCRUMB = '.oxd-topbar-header-breadcrumb';
 const CARD_CONTAINER = '.orangehrm-card-container';
 
@@ -24,6 +23,10 @@ class AdminAccessPage {
         cy.get(PASSWORD_FIELD).clear().type(password, { log: false });
     }
 
+    static clearPassword() {
+        cy.get(PASSWORD_FIELD).clear();
+    }
+
     static submit() {
         cy.get(SUBMIT_BUTTON).click();
     }
@@ -32,22 +35,11 @@ class AdminAccessPage {
         cy.get(ERROR_MESSAGE).should('contain.text', message);
     }
 
-    static verifyRequiredMessage(message) {
-        cy.get(REQUIRED_MESSAGE).should('contain.text', message);
-    }
-
     static verifyNavigationToMaintenancePurgeRecord() {
         cy.url().should('include', '/web/index.php/maintenance/purgeEmployee');
-        cy.visit(BREADCRUMB, { timeout: 10000 }).should('contain.text', 'MaintenancePurge Records');
-         cy.get(CARD_CONTAINER).should('exist');
+        cy.get(BREADCRUMB, { timeout: 15000 }).should('contain.text', 'MaintenancePurge Records');
+        cy.get(CARD_CONTAINER).should('exist');
     }
 }
 
 export default AdminAccessPage;
-
-
-
-
-
-
-
