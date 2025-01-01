@@ -22,9 +22,13 @@ module.exports = defineConfig({
 
       return config;
     },
-    //specPattern: "cypress/e2e/features/**/*.feature", 
-    specPattern: "**/*.feature",
-
-
+    specPattern: "**/*.feature", // Ensure this is correct for your feature files
+    reporter: "cypress-mochawesome-reporter",
+    reporterOptions: {
+      reportDir: "cypress/reports", // Define the reports directory
+      overwrite: true,
+      html: false,
+      json: true, // Ensure JSON is generated
+    },
   },
 });
