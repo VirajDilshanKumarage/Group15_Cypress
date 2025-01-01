@@ -14,5 +14,8 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
     "cypress": "^13.17.0",
     "gherkin": "^9.0.0"
+  },
+  "dependencies": {
+    "cypress-xpath": "^2.0.1"
   }
 }
