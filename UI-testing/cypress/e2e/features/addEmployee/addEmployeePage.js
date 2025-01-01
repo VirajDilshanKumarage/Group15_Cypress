@@ -42,7 +42,6 @@ class AddEmployee {
     }
 
     static clickSave(){
-        cy.get('input.oxd-file-input').selectFile(filePath, { force: true });
         cy.xpath(XPATH_SAVE_ITEM).click();
     }
 
