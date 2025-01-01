@@ -1,5 +1,7 @@
+// view.js
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import LoginPage from "./loginPage";
+import LoginPage from "../login/loginPage";
+import ViewPage from "./viewPage";
 
 Given("I am on the login page", () => {
   LoginPage.visit();
@@ -21,6 +23,18 @@ Then("I should see the home page", () => {
   LoginPage.seeHomePage();
 });
 
-Then("I should see error message with {string}", (error) => {
-  LoginPage.getErrorMessage(error);
+When("I navigate to the {string} page", () => {
+  ViewPage.navigateToPerformancePage();
+});
+
+When("I click on {string} tab", (tabName) => {
+  ViewPage.clickTab(tabName);
+});
+
+When("I click the {string} button for a tracker", () => {
+  ViewPage.clickViewButton();
+});
+
+Then("I should see the tracker page with the title {string}", (title) => {
+  ViewPage.verifyTrackerPage(title);
 });
