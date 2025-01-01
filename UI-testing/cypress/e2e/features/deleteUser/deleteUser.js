@@ -5,7 +5,7 @@ import 'cypress-xpath';
 import DeleteUser from './deleteUserPage';
 
 Given('I am logged in as an admin', () => {
-  LoginAsValidUser();  
+  LoginAsValidUser('',''); 
 });
 
 When('I Click on Admin item in Dashboard', ()=>{

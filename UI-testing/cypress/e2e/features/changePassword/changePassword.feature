@@ -11,3 +11,9 @@ Feature: Change password
     And I confirm the password with "MyNewPass123!"
     And I click on save button
     Then I see the tost message with "Successfully Saved"
+    And I logout and revisit the login page
+    And I Try to login with new password which "MyNewPass123!"
+    And I should see the Home page
+
+
+

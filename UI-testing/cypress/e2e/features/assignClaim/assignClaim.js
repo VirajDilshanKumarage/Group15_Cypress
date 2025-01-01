@@ -3,7 +3,7 @@ import AssignClaimPage from './assignClaimPage.js';
 const { default: LoginAsValidUser } = require('../hooks.js');
 
 Given("I am logged in as an admin", () => {
-    LoginAsValidUser();
+    LoginAsValidUser('','');
 });
 
 Given('I am on the assign claim page', () => {

@@ -4,7 +4,7 @@ import BuzzPage from "./buzzPage";
 
 // Reuse the login hook
 Given("I am logged in", () => {
-  LoginAsValidUser();
+  LoginAsValidUser('','');
 });
 
 When("I navigate to the Buzz page", () => {

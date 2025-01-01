@@ -5,7 +5,8 @@ const LOCATORS = {
     newPasswordInput: '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[1]/div/div[2]/input',
     confirmPasswordInput: '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[2]/div/div[2]/input',
     saveButton: '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]',
-    toastMessage: '[class*="toast"]'
+    toastMessage: '[class*="toast"]',
+    logoutButtonXpath: '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/ul/li[4]/a'
 };
 
 class ChangePassword {
@@ -38,6 +39,10 @@ class ChangePassword {
         cy.get(LOCATORS.toastMessage)
             .should('be.visible')
             .and('contain', message);
+    }
+
+    static clickOnLogout(){
+        cy.xpath(LOCATORS.logoutButtonXpath).click();
     }
 }
 

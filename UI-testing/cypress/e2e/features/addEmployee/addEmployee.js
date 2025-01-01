@@ -5,7 +5,7 @@ import 'cypress-file-upload';
 const { default: LoginAsValidUser } = require('../hooks');
 
 Given("I am logged in as an admin", () => {
-    LoginAsValidUser();
+    LoginAsValidUser('','');
 });
 
 When("I Click on PIM item in Dashboard", ()=> {

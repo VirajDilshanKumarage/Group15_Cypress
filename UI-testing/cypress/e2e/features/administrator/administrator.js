@@ -4,7 +4,7 @@ import LoginAsValidUser from '../hooks';
 
 
 Given("I am a valid user", () => {
-    LoginAsValidUser(); // Implement user login logic here
+    LoginAsValidUser('',''); // Implement user login logic here
 });
 
 When("I navigate to the Administrator access page", () => {

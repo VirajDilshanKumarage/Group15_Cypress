@@ -4,7 +4,7 @@ import DashboardPage from "./dashboardPage";
 
 // Reuse the login hook
 Given("I am logged in as a valid user", () => {
-  LoginAsValidUser();
+  LoginAsValidUser('','');
 });
 
 // Navigate through each tab in the dashboard
