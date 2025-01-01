@@ -32,6 +32,10 @@ When("I enter Employee ID with {string}", (empID) => {
     AddEmployee.enterEmpID(empID);  
 });
 
+When("I add Image with file path {string}", (filePath) => {
+    AddEmployee.addImage(filePath);
+});
+
 When("I click on Save button", () => {
     AddEmployee.clickSave();
 });

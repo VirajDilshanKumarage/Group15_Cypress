@@ -11,8 +11,8 @@ When("I Click on PIM item in Dashboard", () => {
     DeleteEmployee.clickPIM();
 });
 
-When("I click on Delete button on a row", ()=> {
-    DeleteEmployee.clickDeleteButton();
+When("I click on Delete button on a row with ID {string}", (ID)=> {
+    DeleteEmployee.clickDeleteButton(ID);
 });
 
 When("I click on Delete confirmation button", ()=> {
