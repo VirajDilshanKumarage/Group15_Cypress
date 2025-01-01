@@ -60,3 +60,5 @@ lerna-debug.log
 # Next.js build and cache folders
 .next/
 out/
+
+.codegpt

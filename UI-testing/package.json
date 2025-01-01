@@ -13,6 +13,10 @@
     "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
     "cypress": "^13.17.0",
+    "cypress-xpath": "^2.0.1",
     "gherkin": "^9.0.0"
+  },
+  "dependencies": {
+    "assignment": "file:"
   }
 }
