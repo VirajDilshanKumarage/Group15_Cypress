@@ -11,7 +11,7 @@ Given("I am logged in as a valid user", () => {
 When("I navigate to each tab in the dashboard", () => {
   DashboardPage.tabs.forEach((tab) => {
     DashboardPage.navigateToTab(tab.id);
-    cy.get('.oxd-layout-container').should('be.visible');
+    cy.get('.oxd-main-menu-item-wrapper').should('be.visible');
     // cy.wait(1000); // Allow the page to load
   });
 });
