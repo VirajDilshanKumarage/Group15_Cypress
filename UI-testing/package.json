@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ui:test": "cypress run --config-file cypress.config.js"
+    "ui:test": "cypress run --config-file cypress.config.js",
+    "generate:report": "node generateReport.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "cucumber-html-reporter": "^7.2.0",
     "cypress": "^13.16.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-xpath": "^2.0.1",
