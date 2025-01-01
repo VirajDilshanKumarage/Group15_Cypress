@@ -3,6 +3,22 @@ describe('DELETE API Tests', () => {
     const adminCredentials = { username: 'admin', password: 'password' };
     const userCredentials = { username: 'user', password: 'password' };
 
+    // Test0: delete a book without authentication
+    it('Should not allow to delete without authentication', () => {
+        const bookId = 6; // Book ID to delete
+        cy.request({
+            method: 'DELETE',
+            url: `${baseUrl}/${bookId}`,
+            failOnStatusCode: false
+        }).then((response) => {
+            cy.log('Response:', response);
+            if (response.status === 200) {
+                cy.log('Bug Detected: Deletion succeeded without authentication.');
+            }
+            expect(response.status).to.eq(401);
+        });
+    });
+    
     // Test1: delete a book as admin
     it('Should delete a book successfully (Admin)', () => {
         const bookId = 6; // book ID to delete
