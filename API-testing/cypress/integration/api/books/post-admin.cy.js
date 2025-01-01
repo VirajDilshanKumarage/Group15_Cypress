@@ -1,5 +1,14 @@
 describe("API Tests for /api/books", () => {
   const apiUrl = "http://localhost:7081/api/books";
+  const loginCredentials = {
+    username: "admin",
+    password: "password",
+  }
+
+  const wrongLoginCredentials = {
+    username: "wrong-username",
+    password: "wrong-password",
+  }
 
 
   /*------------- Create a book -------------*/
@@ -8,10 +17,7 @@ describe("API Tests for /api/books", () => {
     cy.request({
       method: "POST",
       url: apiUrl,
-      auth: {
-        username: "admin",
-        password: "password",
-      },
+      auth: loginCredentials,
       body: {
         id: 1,
         title: "Hathpana",
@@ -31,10 +37,7 @@ describe("API Tests for /api/books", () => {
     cy.request({
       method: "POST",
       url: apiUrl,
-      auth: {
-        username: "admin",
-        password: "password",
-      },
+      auth: loginCredentials,
       body: {}, // Empty object to simulate missing mandatory parameters
       failOnStatusCode: false, // Prevent Cypress from failing on 4xx or 5xx errors
     }).then((response) => {
@@ -49,10 +52,7 @@ describe("API Tests for /api/books", () => {
     cy.request({
       method: "POST",
       url: apiUrl,
-      auth: {
-        username: "admin",
-        password: "password",
-      },
+      auth: loginCredentials,
       body: {
         title: "Treasure Island",
         author: "Robert Louis Stevenson",
@@ -72,10 +72,7 @@ describe("API Tests for /api/books", () => {
     cy.request({
       method: "POST",
       url: apiUrl,
-      auth: {
-        username: "wrong-username", // Use an incorrect username and password
-        password: "wrong-password",
-      },
+      auth: wrongLoginCredentials, // Use wrong login credentials
       body: {
         title: "Peter Pan",
         author: "James Matthew Barrie",
@@ -92,10 +89,7 @@ describe("API Tests for /api/books", () => {
     cy.request({
       method: "POST",
       url: apiUrl,
-      auth: {
-        username: "admin",
-        password: "password",
-      },
+      auth:loginCredentials,
       body: {
         // id: 1,
         title: "Hathpana",                // add the same book
@@ -115,10 +109,7 @@ describe("API Tests for /api/books", () => {
     cy.request({
       method: "POST",
       url: apiUrl,
-      auth: {
-        username: "admin",
-        password: "password",
-      },
+      auth: loginCredentials,
       body: {
         id: 2,
         title: "",
@@ -136,10 +127,7 @@ describe("API Tests for /api/books", () => {
     cy.request({
       method: "POST",
       url: apiUrl,
-      auth: {
-        username: "admin",
-        password: "password",
-      },
+      auth: loginCredentials,
       body: {
         id: 1,
         title: "The Adventures of Tom Sawyer",
