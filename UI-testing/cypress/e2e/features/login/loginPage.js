@@ -1,5 +1,4 @@
-const URL =
-  "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+const URL ="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 const USERNAME = 'input[name="username"]';
 const PASSWORD = 'input[name="password"]';
 const SUBMIT_BUTTON = "button.orangehrm-login-button";

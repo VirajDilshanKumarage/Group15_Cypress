@@ -1,26 +1,10 @@
 // view.js
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import LoginPage from "../login/loginPage";
+import LoginAsValidUser from "../hooks";  
 import ViewPage from "./viewPage";
 
 Given("I am on the login page", () => {
-  LoginPage.visit();
-});
-
-When("I enter username with {string}", (username) => {
-  LoginPage.enterUserName(username);
-});
-
-When("I enter password with {string}", (password) => {
-  LoginPage.enterPassword(password);
-});
-
-When("I click on submit button", () => {
-  LoginPage.submit();
-});
-
-Then("I should see the home page", () => {
-  LoginPage.seeHomePage();
+  LoginAsValidUser('','');
 });
 
 When("I navigate to the {string} page", () => {
