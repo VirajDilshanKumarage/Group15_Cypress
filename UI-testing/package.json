@@ -16,5 +16,8 @@
     "cypress": "^13.16.0",
     "esbuild": "^0.24.2",
     "gherkin": "^9.0.0"
+  },
+  "dependencies": {
+    "assignment": "file:"
   }
 }
