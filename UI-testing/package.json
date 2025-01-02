@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser:chrome": "npx cypress run --browser=chrome --headed --spec 'cypress/e2e/features/**/*.feature' --reporter mocha-allure-reporter --reporter-options allureResultsPath=custom-allure-results",
+    "report:allure": "allure generate \"allure-results\" --clean -o \"allure-report\" && allure open \"allure-report\""
+   },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -12,12 +14,14 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "allure-commandline": "^2.32.0",
     "cucumber-html-reporter": "^7.2.0",
     "cypress": "^13.16.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-xpath": "^2.0.1",
-    "gherkin": "^9.0.0"
+    "gherkin": "^9.0.0",
+    "mocha-allure-reporter": "^1.4.0"
   },
   "dependencies": {
     "cypress-xpath": "^2.0.1"

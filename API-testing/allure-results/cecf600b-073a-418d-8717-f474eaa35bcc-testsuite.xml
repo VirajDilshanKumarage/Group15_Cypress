@@ -1,0 +1,462 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735828573319' stop='1735828576862'>
+    <name>POST Request Test for Resource Creation</name>
+    <title>POST Request Test for Resource Creation</title>
+    <test-cases>
+        <test-case start='1735828573319' status='broken' stop='1735828574054'>
+            <name>should successfully create a resource with mandatory fields</name>
+            <title>should successfully create a resource with mandatory fields</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: POST
+                URL: http://localhost:7081/api/books
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request</message>
+                <stack-trace>CypressError: `cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: POST
+                URL: http://localhost:7081/api/books
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:132904:70)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:4226:37)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at Promise._settlePromiseFromHandler (http://localhost:60771/__cypress/runner/cypress_runner.js:1542:31)
+                    at Promise._settlePromise (http://localhost:60771/__cypress/runner/cypress_runner.js:1599:18)
+                    at Promise._settlePromise0 (http://localhost:60771/__cypress/runner/cypress_runner.js:1644:10)
+                    at Promise._settlePromises (http://localhost:60771/__cypress/runner/cypress_runner.js:1720:18)
+                    at _drainQueueStep (http://localhost:60771/__cypress/runner/cypress_runner.js:2430:12)
+                    at _drainQueue (http://localhost:60771/__cypress/runner/cypress_runner.js:2423:9)
+                    at Async._drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2439:5)
+                    at Async.drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2309:14)
+                From Your Spec Code:
+                    at Context.eval (http://localhost:60771/__cypress/tests?p=cypress\integration\api\books\post_user.cy.js:12:10)
+                
+                From Node.js Internals:
+                  RequestError: Error: connect ECONNREFUSED 127.0.0.1:7081
+                      at new r (&lt;embedded>:227:405020)
+                      at ee.callback (&lt;embedded>:227:411021)
+                      at e.callback.s.callback [as _callback] (&lt;embedded>:227:410467)
+                      at s._callback.s.callback.s.callback (&lt;embedded>:290:100275)
+                      at ee.emit (node:events:514:28)
+                      at ee.onRequestError (&lt;embedded>:290:109217)
+                      at ClientRequest.emit (node:events:526:35)
+                      at Socket.socketErrorListener (node:_http_client:501:9)
+                      at Socket.emit (node:events:514:28)
+                      at emitErrorNT (node:internal/streams/destroy:151:8)
+                      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735828574074' status='broken' stop='1735828574765'>
+            <name>should fail if author field missing</name>
+            <title>should fail if author field missing</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: POST
+                URL: http://localhost:7081/api/books
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request</message>
+                <stack-trace>CypressError: `cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: POST
+                URL: http://localhost:7081/api/books
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:132904:70)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:4226:37)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at Promise._settlePromiseFromHandler (http://localhost:60771/__cypress/runner/cypress_runner.js:1542:31)
+                    at Promise._settlePromise (http://localhost:60771/__cypress/runner/cypress_runner.js:1599:18)
+                    at Promise._settlePromise0 (http://localhost:60771/__cypress/runner/cypress_runner.js:1644:10)
+                    at Promise._settlePromises (http://localhost:60771/__cypress/runner/cypress_runner.js:1720:18)
+                    at _drainQueueStep (http://localhost:60771/__cypress/runner/cypress_runner.js:2430:12)
+                    at _drainQueue (http://localhost:60771/__cypress/runner/cypress_runner.js:2423:9)
+                    at Async._drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2439:5)
+                    at Async.drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2309:14)
+                From Your Spec Code:
+                    at Context.eval (http://localhost:60771/__cypress/tests?p=cypress\integration\api\books\post_user.cy.js:34:10)
+                
+                From Node.js Internals:
+                  RequestError: Error: connect ECONNREFUSED 127.0.0.1:7081
+                      at new r (&lt;embedded>:227:405020)
+                      at ee.callback (&lt;embedded>:227:411021)
+                      at e.callback.s.callback [as _callback] (&lt;embedded>:227:410467)
+                      at s._callback.s.callback.s.callback (&lt;embedded>:290:100275)
+                      at ee.emit (node:events:514:28)
+                      at ee.onRequestError (&lt;embedded>:290:109217)
+                      at ClientRequest.emit (node:events:526:35)
+                      at Socket.socketErrorListener (node:_http_client:501:9)
+                      at Socket.emit (node:events:514:28)
+                      at emitErrorNT (node:internal/streams/destroy:151:8)
+                      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735828574777' status='broken' stop='1735828575475'>
+            <name>should fail if title field missing</name>
+            <title>should fail if title field missing</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: POST
+                URL: http://localhost:7081/api/books
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request</message>
+                <stack-trace>CypressError: `cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: POST
+                URL: http://localhost:7081/api/books
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:132904:70)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:4226:37)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at Promise._settlePromiseFromHandler (http://localhost:60771/__cypress/runner/cypress_runner.js:1542:31)
+                    at Promise._settlePromise (http://localhost:60771/__cypress/runner/cypress_runner.js:1599:18)
+                    at Promise._settlePromise0 (http://localhost:60771/__cypress/runner/cypress_runner.js:1644:10)
+                    at Promise._settlePromises (http://localhost:60771/__cypress/runner/cypress_runner.js:1720:18)
+                    at _drainQueueStep (http://localhost:60771/__cypress/runner/cypress_runner.js:2430:12)
+                    at _drainQueue (http://localhost:60771/__cypress/runner/cypress_runner.js:2423:9)
+                    at Async._drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2439:5)
+                    at Async.drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2309:14)
+                From Your Spec Code:
+                    at Context.eval (http://localhost:60771/__cypress/tests?p=cypress\integration\api\books\post_user.cy.js:55:10)
+                
+                From Node.js Internals:
+                  RequestError: Error: connect ECONNREFUSED 127.0.0.1:7081
+                      at new r (&lt;embedded>:227:405020)
+                      at ee.callback (&lt;embedded>:227:411021)
+                      at e.callback.s.callback [as _callback] (&lt;embedded>:227:410467)
+                      at s._callback.s.callback.s.callback (&lt;embedded>:290:100275)
+                      at ee.emit (node:events:514:28)
+                      at ee.onRequestError (&lt;embedded>:290:109217)
+                      at ClientRequest.emit (node:events:526:35)
+                      at Socket.socketErrorListener (node:_http_client:501:9)
+                      at Socket.emit (node:events:514:28)
+                      at emitErrorNT (node:internal/streams/destroy:151:8)
+                      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735828575488' status='broken' stop='1735828576149'>
+            <name>should fail if a role is unauthorized</name>
+            <title>should fail if a role is unauthorized</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: POST
+                URL: http://localhost:7081/api/books
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request</message>
+                <stack-trace>CypressError: `cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: POST
+                URL: http://localhost:7081/api/books
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:132904:70)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:4226:37)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at Promise._settlePromiseFromHandler (http://localhost:60771/__cypress/runner/cypress_runner.js:1542:31)
+                    at Promise._settlePromise (http://localhost:60771/__cypress/runner/cypress_runner.js:1599:18)
+                    at Promise._settlePromise0 (http://localhost:60771/__cypress/runner/cypress_runner.js:1644:10)
+                    at Promise._settlePromises (http://localhost:60771/__cypress/runner/cypress_runner.js:1720:18)
+                    at _drainQueueStep (http://localhost:60771/__cypress/runner/cypress_runner.js:2430:12)
+                    at _drainQueue (http://localhost:60771/__cypress/runner/cypress_runner.js:2423:9)
+                    at Async._drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2439:5)
+                    at Async.drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2309:14)
+                From Your Spec Code:
+                    at Context.eval (http://localhost:60771/__cypress/tests?p=cypress\integration\api\books\post_user.cy.js:77:10)
+                
+                From Node.js Internals:
+                  RequestError: Error: connect ECONNREFUSED 127.0.0.1:7081
+                      at new r (&lt;embedded>:227:405020)
+                      at ee.callback (&lt;embedded>:227:411021)
+                      at e.callback.s.callback [as _callback] (&lt;embedded>:227:410467)
+                      at s._callback.s.callback.s.callback (&lt;embedded>:290:100275)
+                      at ee.emit (node:events:514:28)
+                      at ee.onRequestError (&lt;embedded>:290:109217)
+                      at ClientRequest.emit (node:events:526:35)
+                      at Socket.socketErrorListener (node:_http_client:501:9)
+                      at Socket.emit (node:events:514:28)
+                      at emitErrorNT (node:internal/streams/destroy:151:8)
+                      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735828576161' status='broken' stop='1735828576858'>
+            <name>should fail if two books have the same title</name>
+            <title>should fail if two books have the same title</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: POST
+                URL: http://localhost:7081/api/books
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request</message>
+                <stack-trace>CypressError: `cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: POST
+                URL: http://localhost:7081/api/books
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:132904:70)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:4226:37)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at Promise._settlePromiseFromHandler (http://localhost:60771/__cypress/runner/cypress_runner.js:1542:31)
+                    at Promise._settlePromise (http://localhost:60771/__cypress/runner/cypress_runner.js:1599:18)
+                    at Promise._settlePromise0 (http://localhost:60771/__cypress/runner/cypress_runner.js:1644:10)
+                    at Promise._settlePromises (http://localhost:60771/__cypress/runner/cypress_runner.js:1720:18)
+                    at _drainQueueStep (http://localhost:60771/__cypress/runner/cypress_runner.js:2430:12)
+                    at _drainQueue (http://localhost:60771/__cypress/runner/cypress_runner.js:2423:9)
+                    at Async._drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2439:5)
+                    at Async.drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2309:14)
+                From Your Spec Code:
+                    at Context.eval (http://localhost:60771/__cypress/tests?p=cypress\integration\api\books\post_user.cy.js:99:10)
+                
+                From Node.js Internals:
+                  RequestError: Error: connect ECONNREFUSED 127.0.0.1:7081
+                      at new r (&lt;embedded>:227:405020)
+                      at ee.callback (&lt;embedded>:227:411021)
+                      at e.callback.s.callback [as _callback] (&lt;embedded>:227:410467)
+                      at s._callback.s.callback.s.callback (&lt;embedded>:290:100275)
+                      at ee.emit (node:events:514:28)
+                      at ee.onRequestError (&lt;embedded>:290:109217)
+                      at ClientRequest.emit (node:events:526:35)
+                      at Socket.socketErrorListener (node:_http_client:501:9)
+                      at Socket.emit (node:events:514:28)
+                      at emitErrorNT (node:internal/streams/destroy:151:8)
+                      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

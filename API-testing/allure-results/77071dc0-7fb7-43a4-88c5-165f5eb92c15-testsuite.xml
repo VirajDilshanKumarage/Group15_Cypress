@@ -1,0 +1,371 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735828556223' stop='1735828559206'>
+    <name>DELETE API Tests</name>
+    <title>DELETE API Tests</title>
+    <test-cases>
+        <test-case start='1735828556223' status='broken' stop='1735828557045'>
+            <name>Should not allow to delete without authentication</name>
+            <title>Should not allow to delete without authentication</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books/6
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: DELETE
+                URL: http://localhost:7081/api/books/6
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request</message>
+                <stack-trace>CypressError: `cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books/6
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: DELETE
+                URL: http://localhost:7081/api/books/6
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:132904:70)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:4226:37)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at Promise._settlePromiseFromHandler (http://localhost:60771/__cypress/runner/cypress_runner.js:1542:31)
+                    at Promise._settlePromise (http://localhost:60771/__cypress/runner/cypress_runner.js:1599:18)
+                    at Promise._settlePromise0 (http://localhost:60771/__cypress/runner/cypress_runner.js:1644:10)
+                    at Promise._settlePromises (http://localhost:60771/__cypress/runner/cypress_runner.js:1720:18)
+                    at _drainQueueStep (http://localhost:60771/__cypress/runner/cypress_runner.js:2430:12)
+                    at _drainQueue (http://localhost:60771/__cypress/runner/cypress_runner.js:2423:9)
+                    at Async._drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2439:5)
+                    at Async.drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2309:14)
+                From Your Spec Code:
+                    at Context.eval (http://localhost:60771/__cypress/tests?p=cypress\integration\api\books\delete.cy.js:9:10)
+                
+                From Node.js Internals:
+                  RequestError: Error: connect ECONNREFUSED 127.0.0.1:7081
+                      at new r (&lt;embedded>:227:405020)
+                      at ee.callback (&lt;embedded>:227:411021)
+                      at e.callback.s.callback [as _callback] (&lt;embedded>:227:410467)
+                      at s._callback.s.callback.s.callback (&lt;embedded>:290:100275)
+                      at ee.emit (node:events:514:28)
+                      at ee.onRequestError (&lt;embedded>:290:109217)
+                      at ClientRequest.emit (node:events:526:35)
+                      at Socket.socketErrorListener (node:_http_client:501:9)
+                      at Socket.emit (node:events:514:28)
+                      at emitErrorNT (node:internal/streams/destroy:151:8)
+                      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735828557068' status='broken' stop='1735828557776'>
+            <name>Should delete a book successfully (Admin)</name>
+            <title>Should delete a book successfully (Admin)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books/6
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: DELETE
+                URL: http://localhost:7081/api/books/6
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request</message>
+                <stack-trace>CypressError: `cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books/6
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: DELETE
+                URL: http://localhost:7081/api/books/6
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:132904:70)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:4226:37)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at Promise._settlePromiseFromHandler (http://localhost:60771/__cypress/runner/cypress_runner.js:1542:31)
+                    at Promise._settlePromise (http://localhost:60771/__cypress/runner/cypress_runner.js:1599:18)
+                    at Promise._settlePromise0 (http://localhost:60771/__cypress/runner/cypress_runner.js:1644:10)
+                    at Promise._settlePromises (http://localhost:60771/__cypress/runner/cypress_runner.js:1720:18)
+                    at _drainQueueStep (http://localhost:60771/__cypress/runner/cypress_runner.js:2430:12)
+                    at _drainQueue (http://localhost:60771/__cypress/runner/cypress_runner.js:2423:9)
+                    at Async._drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2439:5)
+                    at Async.drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2309:14)
+                From Your Spec Code:
+                    at Context.eval (http://localhost:60771/__cypress/tests?p=cypress\integration\api\books\delete.cy.js:23:10)
+                
+                From Node.js Internals:
+                  RequestError: Error: connect ECONNREFUSED 127.0.0.1:7081
+                      at new r (&lt;embedded>:227:405020)
+                      at ee.callback (&lt;embedded>:227:411021)
+                      at e.callback.s.callback [as _callback] (&lt;embedded>:227:410467)
+                      at s._callback.s.callback.s.callback (&lt;embedded>:290:100275)
+                      at ee.emit (node:events:514:28)
+                      at ee.onRequestError (&lt;embedded>:290:109217)
+                      at ClientRequest.emit (node:events:526:35)
+                      at Socket.socketErrorListener (node:_http_client:501:9)
+                      at Socket.emit (node:events:514:28)
+                      at emitErrorNT (node:internal/streams/destroy:151:8)
+                      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735828557792' status='broken' stop='1735828558494'>
+            <name>Should return 404 for deleting a non-existing book (Admin)</name>
+            <title>Should return 404 for deleting a non-existing book (Admin)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books/999
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: DELETE
+                URL: http://localhost:7081/api/books/999
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request</message>
+                <stack-trace>CypressError: `cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books/999
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: DELETE
+                URL: http://localhost:7081/api/books/999
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:132904:70)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:4226:37)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at Promise._settlePromiseFromHandler (http://localhost:60771/__cypress/runner/cypress_runner.js:1542:31)
+                    at Promise._settlePromise (http://localhost:60771/__cypress/runner/cypress_runner.js:1599:18)
+                    at Promise._settlePromise0 (http://localhost:60771/__cypress/runner/cypress_runner.js:1644:10)
+                    at Promise._settlePromises (http://localhost:60771/__cypress/runner/cypress_runner.js:1720:18)
+                    at _drainQueueStep (http://localhost:60771/__cypress/runner/cypress_runner.js:2430:12)
+                    at _drainQueue (http://localhost:60771/__cypress/runner/cypress_runner.js:2423:9)
+                    at Async._drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2439:5)
+                    at Async.drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2309:14)
+                From Your Spec Code:
+                    at Context.eval (http://localhost:60771/__cypress/tests?p=cypress\integration\api\books\delete.cy.js:38:10)
+                
+                From Node.js Internals:
+                  RequestError: Error: connect ECONNREFUSED 127.0.0.1:7081
+                      at new r (&lt;embedded>:227:405020)
+                      at ee.callback (&lt;embedded>:227:411021)
+                      at e.callback.s.callback [as _callback] (&lt;embedded>:227:410467)
+                      at s._callback.s.callback.s.callback (&lt;embedded>:290:100275)
+                      at ee.emit (node:events:514:28)
+                      at ee.onRequestError (&lt;embedded>:290:109217)
+                      at ClientRequest.emit (node:events:526:35)
+                      at Socket.socketErrorListener (node:_http_client:501:9)
+                      at Socket.emit (node:events:514:28)
+                      at emitErrorNT (node:internal/streams/destroy:151:8)
+                      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735828558507' status='broken' stop='1735828559202'>
+            <name>Should not allow a user to delete a book (User)</name>
+            <title>Should not allow a user to delete a book (User)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books/6
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: DELETE
+                URL: http://localhost:7081/api/books/6
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request</message>
+                <stack-trace>CypressError: `cy.request()` failed trying to load:
+                
+                http://localhost:7081/api/books/6
+                
+                We attempted to make an http request to this URL but the request failed without a response.
+                
+                We received this error at the network level:
+                
+                  > Error: connect ECONNREFUSED 127.0.0.1:7081
+                
+                -----------------------------------------------------------
+                
+                The request we sent was:
+                
+                Method: DELETE
+                URL: http://localhost:7081/api/books/6
+                
+                -----------------------------------------------------------
+                
+                Common situations why this would fail:
+                  - you don't have internet access
+                  - you forgot to run / boot your web server
+                  - your web server isn't accessible
+                  - you have weird network configuration settings on your computer
+                
+                https://on.cypress.io/request
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:132904:70)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at &lt;unknown> (http://localhost:60771/__cypress/runner/cypress_runner.js:4226:37)
+                    at tryCatcher (http://localhost:60771/__cypress/runner/cypress_runner.js:1830:23)
+                    at Promise._settlePromiseFromHandler (http://localhost:60771/__cypress/runner/cypress_runner.js:1542:31)
+                    at Promise._settlePromise (http://localhost:60771/__cypress/runner/cypress_runner.js:1599:18)
+                    at Promise._settlePromise0 (http://localhost:60771/__cypress/runner/cypress_runner.js:1644:10)
+                    at Promise._settlePromises (http://localhost:60771/__cypress/runner/cypress_runner.js:1720:18)
+                    at _drainQueueStep (http://localhost:60771/__cypress/runner/cypress_runner.js:2430:12)
+                    at _drainQueue (http://localhost:60771/__cypress/runner/cypress_runner.js:2423:9)
+                    at Async._drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2439:5)
+                    at Async.drainQueues (http://localhost:60771/__cypress/runner/cypress_runner.js:2309:14)
+                From Your Spec Code:
+                    at Context.eval (http://localhost:60771/__cypress/tests?p=cypress\integration\api\books\delete.cy.js:57:10)
+                
+                From Node.js Internals:
+                  RequestError: Error: connect ECONNREFUSED 127.0.0.1:7081
+                      at new r (&lt;embedded>:227:405020)
+                      at ee.callback (&lt;embedded>:227:411021)
+                      at e.callback.s.callback [as _callback] (&lt;embedded>:227:410467)
+                      at s._callback.s.callback.s.callback (&lt;embedded>:290:100275)
+                      at ee.emit (node:events:514:28)
+                      at ee.onRequestError (&lt;embedded>:290:109217)
+                      at ClientRequest.emit (node:events:526:35)
+                      at Socket.socketErrorListener (node:_http_client:501:9)
+                      at Socket.emit (node:events:514:28)
+                      at emitErrorNT (node:internal/streams/destroy:151:8)
+                      at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
