@@ -2,9 +2,9 @@ const DASHBOARD = 'https://opensource-demo.orangehrmlive.com/web/index.php/dashb
 const SEARCH_BAR = '.oxd-input--active';
 const FILTERED_ELEMENT = '.oxd-main-menu';
 
-class AdminAccessPage {
+class Searchbaraccess {
     static visit() {
-        // Visit the Admin Page
+       
         cy.visit(DASHBOARD);
     }
     static enterSearchTerm(term) {
@@ -20,4 +20,4 @@ class AdminAccessPage {
     }
 }
 
-export default AdminAccessPage;
+export default Searchbaraccess;
