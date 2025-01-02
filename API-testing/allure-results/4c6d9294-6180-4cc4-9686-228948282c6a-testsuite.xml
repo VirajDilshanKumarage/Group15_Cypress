@@ -1,0 +1,83 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735837843846' stop='1735837845228'>
+    <name>POST-ADMIN API Tests</name>
+    <title>POST-ADMIN API Tests</title>
+    <test-cases>
+        <test-case start='1735837843846' status='passed' stop='1735837843983'>
+            <name>should successfully create a book (201)</name>
+            <title>should successfully create a book (201)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837843993' status='failed' stop='1735837844261'>
+            <name>should return 400 for missing mandatory parameters</name>
+            <title>should return 400 for missing mandatory parameters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 208 to equal 400</message>
+                <stack-trace>AssertionError: expected 208 to equal 400
+                    at Context.eval (http://localhost:51063/__cypress/tests?p=cypress\integration\api\books\post-admin.cy.js:40:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735837844272' status='failed' stop='1735837844515'>
+            <name>should return 201 for adding book without ID</name>
+            <title>should return 201 for adding book without ID</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 208 to equal 201</message>
+                <stack-trace>AssertionError: expected 208 to equal 201
+                    at Context.eval (http://localhost:51063/__cypress/tests?p=cypress\integration\api\books\post-admin.cy.js:56:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735837844525' status='passed' stop='1735837844631'>
+            <name>should return 401 for incorrect authentication</name>
+            <title>should return 401 for incorrect authentication</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837844639' status='passed' stop='1735837844739'>
+            <name>should return 208 Already Reported when adding a book with the same title</name>
+            <title>should return 208 Already Reported when adding a book with the same title</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837844747' status='failed' stop='1735837844995'>
+            <name>should return 400 for adding book without title and author</name>
+            <title>should return 400 for adding book without title and author</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 201 to equal 400</message>
+                <stack-trace>AssertionError: expected 201 to equal 400
+                    at Context.eval (http://localhost:51063/__cypress/tests?p=cypress\integration\api\books\post-admin.cy.js:107:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735837845004' status='failed' stop='1735837845225'>
+            <name>should return 400 for adding book with existing ID</name>
+            <title>should return 400 for adding book with existing ID</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 201 to equal 400</message>
+                <stack-trace>AssertionError: expected 201 to equal 400
+                    at Context.eval (http://localhost:51063/__cypress/tests?p=cypress\integration\api\books\post-admin.cy.js:123:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

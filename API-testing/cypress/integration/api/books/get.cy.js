@@ -1,4 +1,4 @@
-describe('API Testing: GET APIs', () => {
+describe('GET API Tests', () => {
     const baseUrl = 'http://localhost:7081/api/books';
     const adminCredentials = { username: 'admin', password: 'password' };
     const userCredentials = { username: 'user', password: 'password' };

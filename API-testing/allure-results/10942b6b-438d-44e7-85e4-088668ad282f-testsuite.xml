@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735837848659' stop='1735837849320'>
+    <name>PUT API Tests</name>
+    <title>PUT API Tests</title>
+    <test-cases>
+        <test-case start='1735837848659' status='passed' stop='1735837848800'>
+            <name>Should update a book or handle various response scenarios</name>
+            <title>Should update a book or handle various response scenarios</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837848810' status='passed' stop='1735837848944'>
+            <name>Should handle non-existent book ID (404)</name>
+            <title>Should handle non-existent book ID (404)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837848953' status='passed' stop='1735837849056'>
+            <name>Invalid book ID (400)</name>
+            <title>Invalid book ID (400)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837849067' status='failed' stop='1735837849315'>
+            <name>Missing required fields</name>
+            <title>Missing required fields</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 208 to equal 400</message>
+                <stack-trace>AssertionError: expected 208 to equal 400
+                    at Context.eval (http://localhost:51063/__cypress/tests?p=cypress\integration\api\books\put.cy.js:109:39)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735837838960' stop='1735837840449'>
+    <name>DELETE API Tests</name>
+    <title>DELETE API Tests</title>
+    <test-cases>
+        <test-case start='1735837838960' status='passed' stop='1735837839129'>
+            <name>Should not allow to delete without authentication</name>
+            <title>Should not allow to delete without authentication</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837839140' status='failed' stop='1735837839892'>
+            <name>Should delete a book successfully (Admin)</name>
+            <title>Should delete a book successfully (Admin)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 403 to equal 200</message>
+                <stack-trace>AssertionError: expected 403 to equal 200
+                    at Context.eval (http://localhost:51063/__cypress/tests?p=cypress\integration\api\books\delete.cy.js:33:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735837839903' status='failed' stop='1735837840151'>
+            <name>Should return 404 for deleting a non-existing book (Admin)</name>
+            <title>Should return 404 for deleting a non-existing book (Admin)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 403 to equal 404</message>
+                <stack-trace>AssertionError: expected 403 to equal 404
+                    at Context.eval (http://localhost:51063/__cypress/tests?p=cypress\integration\api\books\delete.cy.js:52:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735837840162' status='failed' stop='1735837840445'>
+            <name>Should not allow a user to delete a book (User)</name>
+            <title>Should not allow a user to delete a book (User)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 404 to equal 401</message>
+                <stack-trace>AssertionError: expected 404 to equal 401
+                    at Context.eval (http://localhost:51063/__cypress/tests?p=cypress\integration\api\books\delete.cy.js:67:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,4 +1,4 @@
-describe('POST Request Test for Resource Creation', () => {
+describe('POST-USER API Tests', () => {
     const baseUrl = 'http://localhost:7081/api/books';
     const uniqueTitle = `Test Title ${Date.now()}`;
     const uniqueauthor = `Test author ${Date.now()}`;

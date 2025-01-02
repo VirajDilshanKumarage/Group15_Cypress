@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735837527033' stop='1735837544133'>
+    <name>Navigate to Maintenance Purge Record</name>
+    <title>Navigate to Maintenance Purge Record</title>
+    <test-cases>
+        <test-case start='1735837527370' status='passed' stop='1735837537437'>
+            <name>Admin enters an incorrect password</name>
+            <title>Admin enters an incorrect password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837537452' status='passed' stop='1735837544133'>
+            <name>Admin enters the correct password</name>
+            <title>Admin enters the correct password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

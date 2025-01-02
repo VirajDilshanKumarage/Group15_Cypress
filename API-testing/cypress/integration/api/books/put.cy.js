@@ -1,4 +1,4 @@
-describe('API Testing: PUT APIs', () => {
+describe('PUT API Tests', () => {
   const baseUrl = 'http://localhost:7081/api/books';
   
   // Test case 01- Update an existing book

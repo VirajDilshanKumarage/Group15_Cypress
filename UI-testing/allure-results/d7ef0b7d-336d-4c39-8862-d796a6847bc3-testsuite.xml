@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735837570227' stop='1735837582071'>
+    <name>Buzz news feed functionality</name>
+    <title>Buzz news feed functionality</title>
+    <test-cases>
+        <test-case start='1735837570576' status='passed' stop='1735837582071'>
+            <name>Successfully add a news feed</name>
+            <title>Successfully add a news feed</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

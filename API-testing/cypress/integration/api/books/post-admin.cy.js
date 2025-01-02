@@ -1,4 +1,4 @@
-describe("API Tests for /api/books", () => {
+describe("POST-ADMIN API Tests", () => {
   const apiUrl = "http://localhost:7081/api/books";
   const loginCredentials = {
     username: "admin",

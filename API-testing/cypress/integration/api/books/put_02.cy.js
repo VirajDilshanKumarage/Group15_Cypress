@@ -1,4 +1,4 @@
-describe("Book API PUT Tests", () => {
+describe("PUT_02 API Tests", () => {
     const baseUrl = "http://localhost:7081/api/books";
     const adminAuth = { username: "admin", password: "password" };
   

@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735837850486' stop='1735837851420'>
+    <name>PUT_02 API Tests</name>
+    <title>PUT_02 API Tests</title>
+    <test-cases>
+        <test-case start='1735837850597' status='passed' stop='1735837850612'>
+            <name>PUT 200 - Successfully update the book</name>
+            <title>PUT 200 - Successfully update the book</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837850622' status='passed' stop='1735837850740'>
+            <name>PUT 208 - Update title with an existing title</name>
+            <title>PUT 208 - Update title with an existing title</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837850748' status='passed' stop='1735837850847'>
+            <name>PUT 404 - Update book which does not exist</name>
+            <title>PUT 404 - Update book which does not exist</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837850854' status='passed' stop='1735837850957'>
+            <name>PUT 400 - Mismatched ID in JSON body and path variable</name>
+            <title>PUT 400 - Mismatched ID in JSON body and path variable</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837850965' status='passed' stop='1735837851066'>
+            <name>PUT 400 - Validate ID is an integer</name>
+            <title>PUT 400 - Validate ID is an integer</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837851074' status='passed' stop='1735837851199'>
+            <name>PUT 400 - Validate attributes and types</name>
+            <title>PUT 400 - Validate attributes and types</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735837851208' status='passed' stop='1735837851420'>
+            <name>PUT Call with Basic Auth</name>
+            <title>PUT Call with Basic Auth</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
