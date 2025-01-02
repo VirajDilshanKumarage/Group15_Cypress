@@ -3,11 +3,11 @@ describe('PUT API Tests', () => {
     
     // Test case 01- Update an existing book
     it('Should update a book or handle various response scenarios', () => {
-      const bookId = 2;
+      const bookId = 1;
       const updatedBook = {
           id: bookId,
-          title: 'Updated Book 7',
-          author: 'Updated Author Name',
+          title: 'Nothing Book1',
+          author: 'Mr. Author',
       };
   
       cy.request({
@@ -20,7 +20,7 @@ describe('PUT API Tests', () => {
           body: updatedBook,
           failOnStatusCode: false, // Prevent test failure for non-2xx responses
       }).then((putResponse) => {
-          if (putResponse.status === 404 && putResponse.body === 'Book not found') {
+          if (putResponse.status === 400 && putResponse.body === 'Invalid book ID') {
               cy.log('The book could not be updated because the provided ID is invalid.');
               expect(putResponse.body).to.eq('Invalid book ID');
           }
@@ -54,11 +54,11 @@ describe('PUT API Tests', () => {
     });
   
     // Test case 02- Update a non-existing book
-    it('Should handle non-existent book ID (404)', () => {
+    it('Should handle non-existent book ID', () => {
       const nonExistentId = 12323;
       const updatedBook = {
           id: nonExistentId,
-          title: 'Nothing Book',
+          title: 'Nothing Book 2',
           author: 'Mr. Author',
       };
   
@@ -72,13 +72,13 @@ describe('PUT API Tests', () => {
           body: updatedBook,
           failOnStatusCode: false,
       }).then((putResponse) => {
-          expect(putResponse.status).to.eq(400);
+          expect(putResponse.status).to.eq(404);
           expect(putResponse.body).to.eq('Book not found');
       });
     });
   
       // Test case 03 - invalid Id
-    it('Invalid book ID (400)', () => {
+    it('Invalid book ID (Not Integer)', () => {
       const invalidId = 'abc';
       const updatedBook = {
           id: invalidId,
@@ -96,7 +96,7 @@ describe('PUT API Tests', () => {
           body: updatedBook,
           failOnStatusCode: false,
       }).then((putResponse) => {
-          expect(putResponse.status).to.eq(404);
+          expect(putResponse.status).to.eq(400);
           expect(putResponse.body).to.eq(undefined);
       });
     });
@@ -122,5 +122,27 @@ describe('PUT API Tests', () => {
           expect(putResponse.status).to.eq(400);
       });
     });
-  
+    // Test case 05 - could not update the book
+    it('could not update the author with chainging title ', () => {
+        const updatedBookId = 1;
+        const updatedBook = {
+          id: updatedBookId,
+          title: 'Nothing Book1',
+          author: 'Mr. Author zero',
+        };
+    
+        cy.request({
+            method: 'PUT',
+            url: `${baseUrl}/${updatedBookId}`,
+            auth: {
+                username: 'admin',
+                password: 'password',
+            },
+            body: updatedBook,
+            failOnStatusCode: false,
+        }).then((putResponse) => {
+            expect(putResponse.status).to.eq(200);
+        });
+      });
+      
   });
