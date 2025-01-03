@@ -1,10 +1,10 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import Searchbar from './searchbarsteps';
+import Searchbar from './searchbarPage';
 import LoginAsValidUser from '../hooks';
 
 
 Given("I am a valid user", () => {
-    LoginAsValidUser('',''); // Implement user login logic here
+    LoginAsValidUser('',''); 
 });
 
 When("I navigate to the search bar", () => {
