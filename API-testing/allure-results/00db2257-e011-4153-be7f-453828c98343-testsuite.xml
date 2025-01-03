@@ -1,0 +1,73 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925283586' stop='1735925285022'>
+    <name>POST-ADMIN API Tests</name>
+    <title>POST-ADMIN API Tests</title>
+    <test-cases>
+        <test-case start='1735925283586' status='passed' stop='1735925283736'>
+            <name>should successfully create a book (201)</name>
+            <title>should successfully create a book (201)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925283751' status='passed' stop='1735925283971'>
+            <name>should return 400 for missing mandatory parameters</name>
+            <title>should return 400 for missing mandatory parameters</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925283983' status='passed' stop='1735925284110'>
+            <name>should return 201 for adding book without ID</name>
+            <title>should return 201 for adding book without ID</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925284120' status='passed' stop='1735925284306'>
+            <name>should return 401 for incorrect authentication</name>
+            <title>should return 401 for incorrect authentication</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925284317' status='passed' stop='1735925284439'>
+            <name>should return 208 Already Reported when adding a book with the same title</name>
+            <title>should return 208 Already Reported when adding a book with the same title</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925284447' status='failed' stop='1735925284735'>
+            <name>should return 400 for adding book without title and author</name>
+            <title>should return 400 for adding book without title and author</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 208 to equal 400</message>
+                <stack-trace>AssertionError: expected 208 to equal 400
+                    at Context.eval (http://localhost:60732/__cypress/tests?p=cypress\integration\api\books\post-admin.cy.js:103:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735925284747' status='failed' stop='1735925285019'>
+            <name>should return 400 for adding book with existing ID</name>
+            <title>should return 400 for adding book with existing ID</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 201 to equal 400</message>
+                <stack-trace>AssertionError: expected 201 to equal 400
+                    at Context.eval (http://localhost:60732/__cypress/tests?p=cypress\integration\api\books\post-admin.cy.js:118:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925748653' stop='1735925768624'>
+    <name>Delete employee</name>
+    <title>Delete employee</title>
+    <test-cases>
+        <test-case start='1735925748995' status='broken' stop='1735925768617'>
+            <name>Delete employee</name>
+            <title>Delete employee</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>`cy.contains()` cannot be passed an empty string.
+                
+                https://on.cypress.io/contains</message>
+                <stack-trace>CypressError: `cy.contains()` cannot be passed an empty string.
+                
+                https://on.cypress.io/contains
+                    at $Command.contains (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:132040:68)
+                    at cyFn (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:138201:19)
+                From Your Spec Code:
+                    at DeleteEmployee.clickDeleteButton (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteEmployee\deleteEmployee.feature:18687:29)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteEmployee\deleteEmployee.feature:18783:36)
+                    at Registry.runStepDefininition (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteEmployee\deleteEmployee.feature:10419:48)
+                    at Object.fn (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteEmployee\deleteEmployee.feature:17965:43)
+                    at runStepWithLogGroup (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteEmployee\deleteEmployee.feature:17425:29)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteEmployee\deleteEmployee.feature:17961:62)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

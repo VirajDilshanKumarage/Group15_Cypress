@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925802743' stop='1735925840809'>
+    <name>Dashboard Navigation</name>
+    <title>Dashboard Navigation</title>
+    <test-cases>
+        <test-case start='1735925803088' status='passed' stop='1735925840809'>
+            <name>Verify that all dashboard tabs are accessible</name>
+            <title>Verify that all dashboard tabs are accessible</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

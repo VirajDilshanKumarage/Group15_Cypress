@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925843539' stop='1735925865968'>
+    <name>Deleting a row based on the username</name>
+    <title>Deleting a row based on the username</title>
+    <test-cases>
+        <test-case start='1735925843885' status='failed' stop='1735925865960'>
+            <name>Delete a row with a specific username</name>
+            <title>Delete a row with a specific username</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find content: 'TestUserName' within the element: &lt;div.oxd-table-row.oxd-table-row--with-border> and with the selector: 'div[data-v-6c07a142]' but never did.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find content: 'TestUserName' within the element: &lt;div.oxd-table-row.oxd-table-row--with-border> and with the selector: 'div[data-v-6c07a142]' but never did.
+                    at ClickPage.searchForUserName (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteUser\deleteUser.feature:18687:29)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteUser\deleteUser.feature:18786:32)
+                    at Registry.runStepDefininition (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteUser\deleteUser.feature:10419:48)
+                    at Object.fn (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteUser\deleteUser.feature:17965:43)
+                    at runStepWithLogGroup (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteUser\deleteUser.feature:17425:29)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\deleteUser\deleteUser.feature:17961:62)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

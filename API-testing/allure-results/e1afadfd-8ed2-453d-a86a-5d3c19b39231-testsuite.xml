@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925287053' stop='1735925288250'>
+    <name>POST-USER API Tests</name>
+    <title>POST-USER API Tests</title>
+    <test-cases>
+        <test-case start='1735925287053' status='passed' stop='1735925287243'>
+            <name>should successfully create a resource with mandatory fields</name>
+            <title>should successfully create a resource with mandatory fields</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925287261' status='failed' stop='1735925287610'>
+            <name>should fail if author field missing</name>
+            <title>should fail if author field missing</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 208 to equal 400</message>
+                <stack-trace>AssertionError: expected 208 to equal 400
+                    at Context.eval (http://localhost:60732/__cypress/tests?p=cypress\integration\api\books\post_user.cy.js:47:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735925287628' status='failed' stop='1735925287927'>
+            <name>should fail if title field missing</name>
+            <title>should fail if title field missing</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 201 to equal 400</message>
+                <stack-trace>AssertionError: expected 201 to equal 400
+                    at Context.eval (http://localhost:60732/__cypress/tests?p=cypress\integration\api\books\post_user.cy.js:68:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735925287940' status='passed' stop='1735925288075'>
+            <name>should fail if a role is unauthorized</name>
+            <title>should fail if a role is unauthorized</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925288093' status='passed' stop='1735925288250'>
+            <name>should fail if two books have the same title</name>
+            <title>should fail if two books have the same title</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

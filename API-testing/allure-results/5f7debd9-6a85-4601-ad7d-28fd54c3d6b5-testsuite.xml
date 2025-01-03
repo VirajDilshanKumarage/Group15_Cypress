@@ -1,0 +1,57 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925290162' stop='1735925291259'>
+    <name>PUT API Tests</name>
+    <title>PUT API Tests</title>
+    <test-cases>
+        <test-case start='1735925290162' status='passed' stop='1735925290338'>
+            <name>Should update a book or handle various response scenarios</name>
+            <title>Should update a book or handle various response scenarios</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925290352' status='passed' stop='1735925290498'>
+            <name>Should handle non-existent book ID</name>
+            <title>Should handle non-existent book ID</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925290509' status='passed' stop='1735925290661'>
+            <name>Invalid book ID (Not Integer)</name>
+            <title>Invalid book ID (Not Integer)</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925290673' status='failed' stop='1735925290972'>
+            <name>Missing required fields</name>
+            <title>Missing required fields</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 208 to equal 400</message>
+                <stack-trace>AssertionError: expected 208 to equal 400
+                    at Context.eval (http://localhost:60732/__cypress/tests?p=cypress\integration\api\books\put.cy.js:110:39)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735925290985' status='failed' stop='1735925291253'>
+            <name>could not update the author with chainging title </name>
+            <title>could not update the author with chainging title </title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 208 to equal 200</message>
+                <stack-trace>AssertionError: expected 208 to equal 200
+                    at Context.eval (http://localhost:60732/__cypress/tests?p=cypress\integration\api\books\put.cy.js:130:39)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

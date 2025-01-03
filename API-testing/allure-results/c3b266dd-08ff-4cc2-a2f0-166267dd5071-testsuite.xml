@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925293429' stop='1735925294020'>
+    <name>PUT_02 API Tests</name>
+    <title>PUT_02 API Tests</title>
+    <test-cases>
+        <test-case start='1735925293429' status='passed' stop='1735925293562'>
+            <name>PUT Call with Basic Auth</name>
+            <title>PUT Call with Basic Auth</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925293575' status='passed' stop='1735925293707'>
+            <name>PUT 400 - Mismatched ID in JSON body and path variable</name>
+            <title>PUT 400 - Mismatched ID in JSON body and path variable</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925293718' status='failed' stop='1735925294016'>
+            <name>PUT 400 - Validate attributes and types</name>
+            <title>PUT 400 - Validate attributes and types</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 200 to equal 400</message>
+                <stack-trace>AssertionError: expected 200 to equal 400
+                    at Context.eval (http://localhost:60732/__cypress/tests?p=cypress\integration\api\books\put_02.cy.js:77:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

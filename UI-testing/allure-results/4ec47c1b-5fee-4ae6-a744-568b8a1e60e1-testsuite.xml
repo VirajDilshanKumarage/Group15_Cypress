@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925868215' stop='1735925891283'>
+    <name>Change password</name>
+    <title>Change password</title>
+    <test-cases>
+        <test-case start='1735925868556' status='failed' stop='1735925891275'>
+            <name>Change the password</name>
+            <title>Change the password</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `.oxd-topbar-header-breadcrumb-module`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `.oxd-topbar-header-breadcrumb-module`, but never found it.
+                    at LoginPage.seeHomePage (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\changePassword\changePassword.feature:18577:40)
+                    at LoginAsValidUser (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\changePassword\changePassword.feature:18721:29)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\changePassword\changePassword.feature:18811:9)
+                    at Registry.runStepDefininition (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\changePassword\changePassword.feature:10415:48)
+                    at Object.fn (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\changePassword\changePassword.feature:17961:43)
+                    at runStepWithLogGroup (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\changePassword\changePassword.feature:17421:29)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\changePassword\changePassword.feature:17957:62)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

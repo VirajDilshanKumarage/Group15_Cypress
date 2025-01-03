@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925770540' stop='1735925800689'>
+    <name>Assign Claim</name>
+    <title>Assign Claim</title>
+    <test-cases>
+        <test-case start='1735925770883' status='failed' stop='1735925790368'>
+            <name>Assign a new claim to an employee</name>
+            <title>Assign a new claim to an employee</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find content: 'Jennifer Ratna Aniston' within the selector: '.oxd-autocomplete-option' but never did.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Jennifer Ratna Aniston' within the selector: '.oxd-autocomplete-option' but never did.
+                    at AssignClaimPage.enterEmployeeName (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:18581:57)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:18799:33)
+                    at Registry.runStepDefininition (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:10419:48)
+                    at Object.fn (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:17965:43)
+                    at runStepWithLogGroup (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:17425:29)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:17961:62)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735925790382' status='failed' stop='1735925800684'>
+            <name>CancelSuccessfully claim assignment</name>
+            <title>CancelSuccessfully claim assignment</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find content: 'Jennifer Ratna Aniston' within the selector: '.oxd-autocomplete-option' but never did.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Jennifer Ratna Aniston' within the selector: '.oxd-autocomplete-option' but never did.
+                    at AssignClaimPage.enterEmployeeName (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:18581:57)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:18799:33)
+                    at Registry.runStepDefininition (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:10419:48)
+                    at Object.fn (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:17965:43)
+                    at runStepWithLogGroup (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:17425:29)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\assignClaim\assignClaim.feature:17961:62)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

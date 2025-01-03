@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925709169' stop='1735925730965'>
+    <name>Add employee</name>
+    <title>Add employee</title>
+    <test-cases>
+        <test-case start='1735925709579' status='failed' stop='1735925730954'>
+            <name>Add employee</name>
+            <title>Add employee</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: expected '[ &lt;div#oxd-toaster_1.oxd-toast-container.oxd-toast-container--bottom>, 10 more... ]' to contain 'Successfully Saved'</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: expected '[ &lt;div#oxd-toaster_1.oxd-toast-container.oxd-toast-container--bottom>, 10 more... ]' to contain 'Successfully Saved'
+                    at AddEmployee.seeToast (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\addEmployee\addEmployee.feature:18713:46)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\addEmployee\addEmployee.feature:19340:33)
+                    at Registry.runStepDefininition (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\addEmployee\addEmployee.feature:10419:48)
+                    at Object.fn (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\addEmployee\addEmployee.feature:17965:43)
+                    at runStepWithLogGroup (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\addEmployee\addEmployee.feature:17425:29)
+                    at Context.eval (https://opensource-demo.orangehrmlive.com/__cypress/tests?p=cypress\e2e\features\addEmployee\addEmployee.feature:17961:62)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

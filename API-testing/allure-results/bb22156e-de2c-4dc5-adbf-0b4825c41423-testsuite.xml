@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1735925280588' stop='1735925281874'>
+    <name>GET API Tests</name>
+    <title>GET API Tests</title>
+    <test-cases>
+        <test-case start='1735925280588' status='passed' stop='1735925280868'>
+            <name>Should fetch all books successfully for admin</name>
+            <title>Should fetch all books successfully for admin</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925280885' status='passed' stop='1735925281033'>
+            <name>Should fetch a specific book by ID successfully for admin</name>
+            <title>Should fetch a specific book by ID successfully for admin</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925281043' status='passed' stop='1735925281173'>
+            <name>Should return 404 for a non-existing book ID for admin</name>
+            <title>Should return 404 for a non-existing book ID for admin</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925281181' status='passed' stop='1735925281307'>
+            <name>Should fetch all books successfully for user</name>
+            <title>Should fetch all books successfully for user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1735925281316' status='failed' stop='1735925281602'>
+            <name>Should fetch a specific book by ID successfully for user</name>
+            <title>Should fetch a specific book by ID successfully for user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 403 to equal 200</message>
+                <stack-trace>AssertionError: expected 403 to equal 200
+                    at Context.eval (http://localhost:60732/__cypress/tests?p=cypress\integration\api\books\get.cy.js:65:36)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1735925281618' status='failed' stop='1735925281870'>
+            <name>Should return 404 for a non-existing book ID for user</name>
+            <title>Should return 404 for a non-existing book ID for user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected 403 to equal 404</message>
+                <stack-trace>AssertionError: expected 403 to equal 404
+                    at Context.eval (http://localhost:60732/__cypress/tests?p=cypress\integration\api\books\get.cy.js:79:36)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
