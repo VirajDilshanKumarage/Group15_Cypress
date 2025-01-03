@@ -24,8 +24,8 @@ describe("POST-ADMIN API Tests", () => {
         author: "Martin wickramasingha",
       },
     }).then((response) => {
-      expect(response.status).to.eq(201); //check the status code equal to 201
-      expect(response.body).to.have.property("id"); //check the response body has id
+      expect(response.status).to.eq(201); 
+      expect(response.body).to.have.property("id"); 
       expect(response.body.title).to.eq('Hathpana');
       expect(response.body.author).to.eq('Martin wickramasingha');
     });
@@ -38,11 +38,11 @@ describe("POST-ADMIN API Tests", () => {
       method: "POST",
       url: apiUrl,
       auth: loginCredentials,
-      body: {}, // Empty object to simulate missing mandatory parameters
+      body: {}, 
       failOnStatusCode: false, // Prevent Cypress from failing on 4xx or 5xx errors
     }).then((response) => {
-      expect(response.status).to.eq(400); // Check for 400 Bad Request
-      expect(response.body).to.eq("Mandatory parameters should not be null"); // Validate updated error message
+      expect(response.status).to.eq(400); 
+      expect(response.body).to.eq("Mandatory parameters should not be null"); 
     });
   });
 
@@ -57,9 +57,9 @@ describe("POST-ADMIN API Tests", () => {
         title: "Treasure Island",
         author: "Robert Louis Stevenson",
       }, 
-      failOnStatusCode: false, // Prevent Cypress from failing on 4xx or 5xx errors
+      failOnStatusCode: false, 
     }).then((response) => {
-      expect(response.status).to.eq(201); //check the status code equal to 201
+      expect(response.status).to.eq(201); 
       expect(response.body.title).to.eq("Treasure Island");
       expect(response.body.author).to.eq("Robert Louis Stevenson");
     });
@@ -95,10 +95,10 @@ describe("POST-ADMIN API Tests", () => {
         title: "Hathpana",                // add the same book
         author: "Martin wickramasingha",
       },
-      failOnStatusCode: false, // Prevent automatic test failure on non-2xx status
+      failOnStatusCode: false, 
     }).then((response) => {
-      expect(response.status).to.eq(208); // Check for 208 status
-      expect(response.body).to.eq("Book Already Exists"); // Validate error message
+      expect(response.status).to.eq(208); 
+      expect(response.body).to.eq("Book Already Exists"); 
     });
   });
 
@@ -115,9 +115,9 @@ describe("POST-ADMIN API Tests", () => {
         title: "",
         author: "",
       },
-      failOnStatusCode: false, // Prevent Cypress from failing on 4xx or 5xx errors
+      failOnStatusCode: false, 
     }).then((response) => {
-      expect(response.status).to.eq(400); // Check for 400 Bad Request
+      expect(response.status).to.eq(400); 
     });
   });
 
@@ -133,9 +133,9 @@ describe("POST-ADMIN API Tests", () => {
         title: "The Adventures of Tom Sawyer",
         author: "Mark Twain",
       },
-      failOnStatusCode: false, // Prevent automatic test failure on non-2xx status
+      failOnStatusCode: false, 
     }).then((response) => {
-      expect(response.status).to.eq(400); // Check for 400 status
+      expect(response.status).to.eq(400); 
     });
   });
 

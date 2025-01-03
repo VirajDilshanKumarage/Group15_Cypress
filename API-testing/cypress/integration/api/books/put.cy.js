@@ -106,7 +106,8 @@ describe('PUT API Tests', () => {
       const bookId = 4;
       const invalidBook = {
           id: bookId,
-          // Missing title and author
+          title : '',
+          author : ''
       };
   
       cy.request({
